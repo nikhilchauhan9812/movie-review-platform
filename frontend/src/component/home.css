@@ -1,0 +1,81 @@
+.carousel-item {
+    position: relative;
+    height: 600px; 
+  }
+  
+  .carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+  
+    filter: brightness(0.7); /* Darken the image for better text visibility */
+  }
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height to center the loading spinner */
+  }
+  .carousel-caption {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    height:25%;
+    text-shadow: 2px 2px 4px rgba(171, 56, 56, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .carousel {
+    background-color: #333; /* Dark background for the carousel */
+  }
+  .moviecontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #0f0e0e;
+  }
+  
+  .moviecard {
+    flex: 1 1 calc(20% - 40px); /* Adjust for gap */
+  max-width: calc(20% - 40px); /* Ensure items don't exceed 20% width of container */
+  box-sizing: border-box; /* Ensure padding and border are included in the width/height */
+  margin: 10px; /* Adjust this value as needed */
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #333; /* Dark background for visibility */
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  .moviecard:hover {
+    /* transform: scale(1.02);
+     */
+     filter: brightness(1.2);
+    /* border: 1px solid whitesmoke; */
+  }
+  .movieposter {
+    width: 100%;
+    height: auto;
+    /* filter: brightness(0.); */
+  }
+  
+  .movie-info {
+    padding: 15px;
+  }
+  
+  .movie-info h3 {
+    font-size: 18px;
+    /* margin: 10px 0; */
+  }
+  
+  .movie-info p {
+    font-size: 14px;
+    color: #666;
+  }
